@@ -11,6 +11,7 @@ Giai đoạn khởi động dự án (Initiating Process Group) — Vùng kiến
 | [Project Scope (Phạm vi Dự án cấp cao)](./project-scope.md) | Ranh giới dự án, in-scope/out-of-scope, deliverables và tiêu chí nghiệm thu cấp cao |
 | [Stakeholder Register (Sổ đăng ký Các bên liên quan)](./stakeholder-register.md) | Phân loại stakeholder, Power/Interest Grid và chiến lược quản lý tương tác |
 | [Stakeholder Analysis (Phân tích Các bên liên quan)](./stakeholder-analysis.md) | Ma trận mức độ tham gia, xung đột lợi ích và kế hoạch tương tác stakeholder |
+| [Communication Matrix (Ma trận Truyền thông)](./communication-matrix.md) | Luồng truyền thông 5W1H, lịch họp/báo cáo và quy tắc vận hành truyền thông |
 | [Project Charter theo chuẩn PMP](./project-charter.md) | Tổng quan, khung nội dung, quy trình ITTO và lưu ý quan trọng |
 
 ## Quy trình chính
