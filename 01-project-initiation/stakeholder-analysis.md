@@ -1,91 +1,178 @@
-# Stakeholder Analysis trong giai đoạn Khởi động
-
-## Khung kiến thức: Kỹ thuật Phân tích Các bên liên quan (Stakeholder Analysis)
-
-Trong quản lý dự án, nếu **Sổ đăng ký các bên liên quan (Stakeholder Register)** giúp chúng ta *liệt kê và nhận diện* "Ai là ai", thì **Phân tích các bên liên quan (Stakeholder Analysis)** là kỹ thuật định lượng và định tính nhằm *đào sâu tâm lý, mức độ ủng hộ và nguy cơ rủi ro* của từng đối tượng để đưa ra chiến lược ứng xử phù hợp.
-
-### 1. Ma trận Đánh giá Mức độ Tham gia (Stakeholder Engagement Assessment Matrix)
-
-PMP định nghĩa 5 mức độ thái độ/hành vi của Stakeholder đối với dự án:
-
-- **Unaware (Chưa biết):** Không biết gì về dự án cũng như tác động tiềm ẩn của nó.
-- **Resistant (Kháng cự/Phản đối):** Biết về dự án nhưng phản đối do lo ngại mất lợi ích, tăng khối lượng công việc hoặc sợ thay đổi.
-- **Neutral (Trung lập):** Biết về dự án nhưng không ủng hộ cũng không phản đối.
-- **Supportive (Ủng hộ):** Biết về dự án và ủng hộ các kết quả đạt được.
-- **Leading (Dẫn dắt):** Biết về dự án và chủ động tham gia điều hướng để đảm bảo dự án thành công.
-
-**Mục tiêu của PM:** Xác định vị trí **Hiện tại (C - Current)** và dịch chuyển họ về vị trí **Mong muốn (D - Desired)**.
-
-### 2. Mô hình Nổi bật Salience Model (Ưu tiên hóa Stakeholders)
-
-Để phân tích sâu hơn ngoài ma trận Quyền hạn/Quan tâm, PMP khuyến nghị đánh giá dựa trên 3 yếu tố:
-
-- **Quyền lực (Power):** Mức độ ảnh hưởng đến quyết định của dự án.
-- **Tính cấp thiết (Urgency):** Đòi hỏi sự chú ý tức thì hoặc mức độ nhạy cảm về mặt thời gian.
-- **Tính hợp pháp (Legitimacy):** Mức độ hợp lý/đúng đắn trong sự tham gia của họ.
 
 ---
 
-# Tài liệu Phân tích Các bên liên quan (Stakeholder Analysis)
+# PHẦN 1: KHUNG KIẾN THỨC CHUYÊN SÂU (KNOWLEDGE FRAMEWORK)
 
-**Dự án:** Phát triển Nền tảng Kỹ thuật số Tích hợp Dịch vụ Toàn diện & Trợ lý Ảo AI
+**Phân tích các bên liên quan (Stakeholder Analysis)** là quá trình thu thập và phân tích thông tin định tính, định lượng một cách có hệ thống để xác định lợi ích, kỳ vọng, mức độ ảnh hưởng và rủi ro từ tất cả các cá nhân/tổ chức có liên quan đến dự án.
+
+### 1. Các mô hình phân loại & Công cụ phân tích cốt lõi
+
+* **Ma trận Quyền hạn / Mức độ quan tâm (Power / Interest Grid):**
+* **Quyền hạn Cao / Quan tâm Cao (Manage Closely):** Nhóm then chốt, cần quản lý chặt chẽ, tham vấn liên tục.
+* **Quyền hạn Cao / Quan tâm Thấp (Keep Satisfied):** Cần đáp ứng tốt nhu cầu nhưng không làm họ bội thực thông tin.
+* **Quyền hạn Thấp / Quan tâm Cao (Keep Informed):** Giữ cho họ luôn được cập nhật, họ là nguồn hỗ trợ tích cực.
+* **Quyền hạn Thấp / Quan tâm Thấp (Monitor):** Theo dõi với nguồn lực tối thiểu.
+
+
+* **Mô hình Nổi bật (Salience Model):**
+Phân tích Stakeholders dựa trên 3 đặc tính sinh động:
+1. *Quyền lực (Power):* Khả năng áp đặt ý chí lên dự án.
+2. *Tính hợp pháp (Legitimacy):* Mức độ chính đáng của sự tham gia/yêu cầu.
+3. *Tính cấp thiết (Urgency):* Đòi hỏi sự chú ý tức thì hoặc mức độ nhạy cảm về thời gian.
+
+
+* **Ma trận Đánh giá Mức độ Tham gia (Stakeholder Engagement Assessment Matrix):**
+Theo dõi sự dịch chuyển thái độ của từng bên qua 5 cấp độ:
+`Chưa biết (Unaware)` ➔ `Kháng cự (Resistant)` ➔ `Trung lập (Neutral)` ➔ `Ủng hộ (Supportive)` ➔ `Dẫn dắt (Leading)`.
+* **Hướng tác động (Directions of Influence):**
+* *Upward (Hướng lên):* Ban lãnh đạo, Nhà tài trợ, CFO.
+* *Downward (Hướng xuống):* Đội ngũ phát triển (Dev, UI/UX, QA).
+* *Sideward (Hướng ngang):* Trưởng phòng Vận hành, Marketing, Pháp lý.
+* *Outward (Hướng ra ngoài):* Khách hàng người dùng, Nhà cung cấp API eKYC/AI, Cơ quan quản lý.
+
+
+
+---
+
+# PHẦN 2: QUY TRÌNH 4 BƯỚC THỰC HIỆN PHÂN TÍCH
+
+```
+┌─────────────────────────────────┐
+│ Bước 1: Thu thập & Định danh    │ ──> Phỏng vấn, Brainstorming, Phân tích tài liệu
+└─────────────────────────────────┘
+                 │
+                 ▼
+┌─────────────────────────────────┐
+│ Bước 2: Định vị & Phân loại     │ ──> Xếp vào Ma trận Power/Interest & Salience
+└─────────────────────────────────┘
+                 │
+                 ▼
+┌─────────────────────────────────┐
+│ Bước 3: Phân tích Xung đột      │ ──> Đánh giá khoảng cách C (Current) vs D (Desired)
+└─────────────────────────────────┘
+                 │
+                 ▼
+┌─────────────────────────────────┐
+│ Bước 4: Lập Chiến lược tác động │ ──> Xây dựng Communication & Engagement Plan
+└─────────────────────────────────┘
+
+```
+
+---
+
+# PHẦN 3: BẢNG PHÂN TÍCH CÁC BÊN LIÊN QUAN CHI TIẾT (STAKEHOLDER ANALYSIS MATRIX)
+
+**Tên dự án:** Phát triển Nền tảng Kỹ thuật số Tích hợp Dịch vụ Toàn diện & Trợ lý Ảo AI
 
 **Giai đoạn:** 01 Project Initiation
 
-**Phiên bản:** 1.0
+**Phiên bản:** 2.0 (Bản nâng cấp chi tiết)
+
+*Ký hiệu thái độ: **C** = Hiện tại (Current) | **D** = Mong muốn (Desired)*
+
+| Bên liên quan (Stakeholder) | Hướng tác động | Phân loại (Power / Interest) | Đánh giá Salience Model | Thái độ (C ➔ D) | Kỳ vọng / Điểm đau cốt lõi | Chiến lược tác động & Quản trị rủi ro |
+| --- | --- | --- | --- | --- | --- | --- |
+| **Ban Giám đốc (Sponsor)** | Upward | Quyền hạn: **Cao**<br>
+
+<br>Quan tâm: **Cao** | Power + Legitimacy + Urgency *(Dominant)* | **C:** Supportive<br>
+
+<br>**D:** **Leading** | • Go-live đúng hạn 6 tháng.<br>
+
+<br>• Tối ưu chi phí CSKH.<br>
+
+<br>• Mở rộng thị phần ứng dụng dịch vụ cao cấp. | • **Chiến lược:** Quản lý chặt chẽ.<br>
+
+<br>• **Hành động:** Gửi báo cáo Executive Dashboard hàng tuần; Trình duyệt các mốc Milestones quan trọng. |
+| **Giám đốc Tài chính (CFO)** | Upward | Quyền hạn: **Cao**<br>
+
+<br>Quan tâm: **Thấp/Vừa** | Power + Legitimacy *(Dominant)* | **C:** Neutral<br>
+
+<br>**D:** **Supportive** | • Kiểm soát tổng ngân sách 2.5 tỷ VNĐ.<br>
+
+<br>• Minh bạch chi phí API duy trì (AI, eKYC, Cloud). | • **Chiến lược:** Giữ cho hài lòng.<br>
+
+<br>• **Hành động:** Cung cấp báo cáo phân tích dòng tiền và ROI; Thống nhất hạn mức duyệt chi nhanh. |
+| **Trưởng phòng Vận hành & CSKH** | Sideward | Quyền hạn: **Vừa**<br>
+
+<br>Quan tâm: **Cao** | Legitimacy + Urgency *(Dependent)* | **C:** **Resistant**<br>
+
+<br>**D:** **Supportive** | • Sợ AI trả lời sai ngữ cảnh làm mất khách.<br>
+
+<br>• E ngại quy trình CMS mới phức tạp, xáo trộn nhân sự. | • **Chiến lược:** Tương tác & Lắng nghe.<br>
+
+<br>• **Hành động:** Cam kết mô hình "Human-in-the-loop"; Đưa họ vào nhóm duyệt giao diện CMS và kịch bản thử nghiệm AI. |
+| **Tech Lead / Kiến trúc sư Hệ thống** | Downward | Quyền hạn: **Cao**<br>
+
+<br>Quan tâm: **Cao** | Power + Legitimacy + Urgency *(Definitive)* | **C:** Supportive<br>
+
+<br>**D:** **Leading** | • Cần yêu cầu kỹ thuật (SRS) rõ ràng.<br>
+
+<br>• Sợ Scope Creep làm trễ hạn Go-live 6 tháng. | • **Chiến lược:** Đồng hành & Trợ lực.<br>
+
+<br>• **Hành động:** Bảo vệ team Dev trước các yêu cầu phát sinh; Trao quyền quyết định về kiến trúc hạ tầng và Framework. |
+| **Chuyên gia UI/UX** | Downward | Quyền hạn: **Vừa**<br>
+
+<br>Quan tâm: **Cao** | Legitimacy *(Discretionary)* | **C:** Supportive<br>
+
+<br>**D:** **Supportive** | • Muốn trải nghiệm tinh tế, chuẩn Luxury.<br>
+
+<br>• Cần phê duyệt thiết kế nhanh để chuyển giao sang Dev. | • **Chiến lược:** Giữ kết nối liên tục.<br>
+
+<br>• **Hành động:** Duyệt cuốn chiếu từng luồng giao diện (eKYC, E-Coffer, Chat AI); Cân bằng giữa thẩm mỹ và tính khả thi kỹ thuật. |
+| **Vendor cung cấp API (eKYC / AI)** | Outward | Quyền hạn: **Vừa**<br>
+
+<br>Quan tâm: **Vừa** | Urgency + Power *(Dangerous nếu dừng service)* | **C:** Neutral<br>
+
+<br>**D:** **Supportive** | • Cần tài liệu kỹ thuật chuẩn xác.<br>
+
+<br>• Đảm bảo thanh toán chi phí duy trì đúng hợp đồng. | • **Chiến lược:** Hợp tác sòng phẳng.<br>
+
+<br>• **Hành động:** Ký cam kết SLA >99.9%; Tích hợp kênh hỗ trợ kỹ thuật phản ứng nhanh (Zalo/Slack 24/7). |
+| **Khách hàng / Người dùng cuối** | Outward | Quyền hạn: **Thấp**<br>
+
+<br>Quan tâm: **Cao** | Legitimacy + Urgency *(Demanding)* | **C:** Unaware<br>
+
+<br>**D:** **Supportive** | • Muốn định danh eKYC siêu nhanh (<1 phút).<br>
+
+<br>• Trợ lý AI phản hồi thông minh, bảo mật tuyệt đối dữ liệu. | • **Chiến lược:** Giữ cho được cập nhật thông tin.<br>
+
+<br>• **Hành động:** Khảo sát nhóm trải nghiệm sớm (Beta Testers); Tối ưu hóa luồng UX đơn giản nhất có thể. |
 
 ---
 
-## 1. Bảng Phân tích Mức độ Tham gia & Chiến lược Tác động
+# PHẦN 4: MA TRẬN GIẢI QUYẾT XUNG ĐỘT TRỌNG YẾU (CONFLICT RESOLUTION MATRIX)
 
-*Ký hiệu: **C** = Mức độ tham gia hiện tại (Current) | **D** = Mức độ tham gia mong muốn (Desired)*
+Trong quá trình khởi động dự án, Quản lý Dự án (PM) phải chủ động xử lý 3 vùng xung đột lợi ích kinh điển sau:
 
-| Bên liên quan (Stakeholder) | Mức độ tham gia (Unaware -> Leading) | Tác động tiềm ẩn & Xung đột lợi ích có thể xảy ra | Chiến lược dịch chuyển & Kế hoạch hành động cụ thể của PM |
-| --- | --- | --- | --- |
-| **1. Ban Giám đốc (Sponsor)** | **C:** Supportive<br>**D:** **Leading** | Lo ngại dự án bị trễ Go-live làm lỡ cơ hội kinh doanh.<br>Có thể thay đổi ưu tiên chiến lược giữa chừng. | Cung cấp báo cáo Dashboard tóm tắt hàng tuần (KPIs/Milestones).<br>Mời phát biểu chỉ đạo tại phiên Kick-off để công khai cam kết hỗ trợ toàn diện cho dự án. |
-| **2. Giám đốc Tài chính (CFO)** | **C:** Neutral<br>**D:** **Supportive** | Lo ngại vượt ngân sách R&D và chi phí API duy trì hàng tháng (Cloud/AI/eKYC).<br>Siết chặt quy trình giải ngân gây chậm tiến độ mua sắm. | Trình bày mô hình ROI & phân tích điểm hòa vốn rõ ràng trong Business Case.<br>Thống nhất trước quy trình duyệt chi nhanh cho các gói hạ tầng dưới 50 triệu VNĐ. |
-| **3. Trưởng bộ phận Vận hành & CSKH** | **C:** **Resistant**<br>**D:** **Supportive** | E ngại Trợ lý AI sẽ thay thế nhân sự hoặc quy trình CMS mới phức tạp làm gián đoạn công việc.<br>Ngại phải thay đổi thói quen làm việc cũ. | Làm rõ AI là **công cụ hỗ trợ** giảm tải tác vụ lặp lại, không phải thay thế nhân sự.<br>Mời tham gia thiết kế luồng CMS ngay từ đầu để đảm bảo giao diện thuận tiện nhất cho họ. |
-| **4. Kiến trúc sư hệ thống / Tech Lead** | **C:** Supportive<br>**D:** **Leading** | Bị áp lực về mặt thời gian 6 tháng đối với các bài toán kỹ thuật khó (eKYC, AI LLM).<br>Xung đột với bộ phận Phân tích nghiệp vụ về yêu cầu tính năng. | Trao quyền chủ động cho Tech Lead lựa chọn công nghệ/Framework phù hợp.<br>Đảm bảo chốt Scope rõ ràng, chống Scope Creep để bảo vệ team kỹ thuật khỏi quá tải. |
-| **5. Chuyên gia UI/UX** | **C:** Supportive<br>**D:** **Supportive** | Muốn tối ưu thẩm mỹ cao cấp (Luxury) nhưng có thể làm tăng độ phức tạp khi Lập trình viên triển khai. | Tổ chức các phiên Review thiết kế sớm (Design Review) giữa UI/UX và Lập trình viên Frontend để cân bằng giữa thẩm mỹ và tính khả thi kỹ thuật. |
-| **6. Đơn vị cung cấp API eKYC & Cloud** | **C:** Neutral<br>**D:** **Supportive** | Tốc độ hỗ trợ kỹ thuật chậm nếu gặp sự cố tích hợp API.<br>Rủi ro thay đổi chính sách giá API theo lượng Request. | Đưa các chỉ số cam kết chất lượng dịch vụ (SLA) rõ ràng vào hợp đồng thương mại.<br>Thiết lập nhóm trao đổi kỹ thuật phản ứng nhanh (Slack/Zalo 24/7). |
-| **7. Khách hàng / Người dùng cuối** | **C:** Unaware<br>**D:** **Supportive** | Ngại sử dụng app mới nếu quy trình eKYC phức tạp hoặc sợ lộ thông tin cá nhân. | Thiết kế luồng eKYC siêu ngắn gọn (<1 phút), hiển thị rõ các cam kết bảo mật thông tin trên giao diện.<br>Tổ chức thử nghiệm nghiệm thu người dùng (UAT) trên nhóm khách hàng thân thiết. |
+```
+[Xung đột 1: Tốc độ Go-live vs Độ hoàn hảo UI/UX]
+  ✦ Tech Lead: Muốn giản lược hiệu ứng để kịp hạn 6 tháng.
+  ✦ UI/UX Designer: Muốn giữ nguyên hiệu ứng Luxury tỉ mỉ.
+  👉 Giải pháp của PM: Áp dụng tư duy MVP (Minimum Viable Product). Bản Go-live ưu tiên hiệu năng và tính năng cốt lõi; các hiệu ứng chuyển cảnh phức tạp chuyển sang giai đoạn nâng cấp tiếp theo.
 
----
+[Xung đột 2: Tự động hóa AI vs An toàn vận hành]
+  ✦ Kinh doanh/Sponsor: Muốn AI tự động chốt đơn đặt dịch vụ và tư vấn tài chính E-Coffer.
+  ✦ Team Vận hành: Lo ngại AI tư vấn sai thông tin gây tổn hại uy tín thương hiệu.
+  👉 Giải pháp của PM: Bán tự động hóa (Semi-automation). AI tư vấn các kịch bản chuẩn (FAQs, gợi ý danh mục); với các giao dịch tài chính E-Coffer hoặc phản hồi khiếu nại, AI sẽ soạn sẵn câu trả lời và yêu cầu Nhân viên Vận hành bấm duyệt (Confirm) trước khi gửi.
 
-## 2. Phân tích Các mối Xung đột Lợi ích trọng yếu & Phương án Xử lý (Risk & Conflict Resolution)
+[Xung đột 3: Ngân sách API vs Tính năng hệ thống]
+  ✦ CFO: Muốn khống chế chi phí duy trì API eKYC và AI theo lượt gọi (Pay-per-use).
+  ✦ Team Sản phẩm: Muốn gọi API liên tục để tối ưu trải nghiệm người dùng.
+  👉 Giải pháp của PM: Thiết lập cơ chế Caching dữ liệu thông minh ở phía Backend để giảm 30-40% số lượng truy vấn API lặp lại không cần thiết sang bên thứ ba.
 
-```text
-[Xung đột 1: Tiến độ vs Chất lượng UX]
-Tech Lead (Muốn đơn giản) <---> UI/UX Designer (Muốn tỉ mỉ)
-=> Giải pháp: PM ưu tiên phát triển MVP trước, tối ưu hiệu ứng ở bản sau.
-
-[Xung đột 2: Chi phí vs Tính năng]
-CFO (Muốn tiết kiệm) <---> Team Vận hành (Muốn mua thêm API xịn)
-=> Giải pháp: PM dùng dữ liệu Business Case chứng minh hiệu quả giảm chi phí lâu dài.
 ```
 
-### Xung đột 1: Team Kỹ thuật (Dev) vs Team Vận hành/Kinh doanh về Yêu cầu tính năng
+---
 
-- **Bản chất:** Team Kinh doanh muốn thêm nhiều tính năng mới, ví dụ tính năng thưởng giới thiệu hoặc báo cáo nâng cao, trong khi Tech Lead muốn giữ phạm vi tối giản để kịp hạn Go-live 6 tháng.
-- **Phương án xử lý của PM:** Sử dụng phương pháp phân loại ưu tiên **MoSCoW** (Must have, Should have, Could have, Won't have). Chỉ đưa các tính năng thuộc nhóm *Must have* vào bản Go-live đầu tiên. Các yêu cầu còn lại đưa vào Backlog sản phẩm cho giai đoạn 2.
+# PHẦN 5: BẢNG KẾ HOẠCH TRUYỀN THÔNG & TƯƠNG TÁC (COMMUNICATION CADENCE)
 
-### Xung đột 2: Bộ phận CSKH e ngại Trợ lý AI (Lo ngại tâm lý & Vận hành)
-
-- **Bản chất:** Nhân viên CSKH lo lắng AI trả lời sai ngữ cảnh gây phàn nàn từ khách hàng cao cấp, hoặc lo ngại nguy cơ giảm biên chế.
-- **Phương án xử lý của PM:** Lập cơ chế **Human-in-the-loop (Con người giám sát)**. Trợ lý AI chỉ tự động trả lời các câu hỏi chuẩn hóa (FAQs). Đối với các giao dịch tài chính hoặc phàn nàn phức tạp, AI sẽ tự động chuyển luồng (Escalate) sang cho nhân viên CSKH xử lý kèm theo toàn bộ lịch sử trò chuyện.
+| Nhóm đối tượng | Kênh truyền thông | Tần suất | Đầu ra / Mục tiêu |
+| --- | --- | --- | --- |
+| **Sponsor & CFO** | Executive Dashboard / Email Report | 2 tuần / lần | Báo cáo tiến độ Milestones, Ngân sách & Rủi ro vĩ mô |
+| **Toàn bộ Stakeholders** | Báo cáo tình trạng dự án (Status Report) | 1 tháng / lần | Cập nhật bức toàn cảnh dự án cho toàn bộ hệ thống |
+| **Core Team (Dev, UI/UX, BA)** | Daily Standup / Sprint Review (Hybrid) | Hàng ngày / 2 tuần | Tháo gỡ nghẽn kỹ thuật, rà soát Backlog và Demo sản phẩm |
+| **Team Vận hành & Vendors** | Họp phối hợp nghiệp vụ & Sandbox Test | 1 tuần / lần | Đảm bảo chuẩn hóa dữ liệu đầu vào và tính sẵn sàng của API |
 
 ---
 
-## 3. Kế hoạch Tương tác Thường niên (Stakeholder Engagement Cadence)
-
-Để duy trì sự đồng thuận xuyên suốt dự án, PM thiết lập tần suất giao tiếp cho từng nhóm đối tượng như sau:
-
-| Nhóm đối tượng | Hình thức tương tác | Tần suất |
-| --- | --- | --- |
-| **Nhóm Quản lý Cấp cao (Sponsor, CFO)** | Báo cáo quản trị (Dashboard / Executive Summary) & Họp Steering Committee | 1 lần/tháng hoặc ngay khi phát sinh rủi ro cấp độ 1 |
-| **Nhóm Thực thi Cốt lõi (Tech Lead, UI/UX, BA)** | Họp kế hoạch Sprint/Daily Standup theo Agile/Hybrid | Hàng ngày 15 phút và hàng tuần review tiến độ |
-| **Nhóm Vận hành Nội bộ & Đối tác (Ops Head, Vendors)** | Họp cập nhật tiến độ tích hợp & Demo sản phẩm thử nghiệm | 2 tuần/lần |
-
----
-
-*Bản Phân tích các bên liên quan này khép lại toàn bộ bộ tài liệu chuẩn cho **Giai đoạn 01 Project Initiation (Khởi động dự án)**. Bạn đã có đủ: Business Case -> Project Vision -> High-Level Scope -> Project Charter -> Stakeholder Register -> Stakeholder Analysis.*
+*Tài liệu **Phân tích các bên liên quan** hoàn chỉnh này cung cấp góc nhìn toàn diện từ chiến lược đến hành động, sẵn sàng để PM đưa vào bộ Hồ sơ Khởi động Dự án (Initiation Phase Package).*
